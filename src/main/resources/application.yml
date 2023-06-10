@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: customer
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db_audit
+    username: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+jwt:
+  validity: 31536000
+  secret: dbb24dfc-be11-45ef-aea8-5419868a52cc
+  apiKey: e62705a0-89bd-4050-9f96-3e031700b3fa
+  authorities:
+    key: roles
+  token:
+    prefix: Bearer
+  header:
+    apiKeyString: API_KEY
+    userIdString: USER_ID
+    tenantIdString: TENANT_ID
+    string: Authorization
